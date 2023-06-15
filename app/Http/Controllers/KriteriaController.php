@@ -15,7 +15,7 @@ class KriteriaController extends Controller
     public function index()
     {
         //
-        $kriteria = kriteria::orderby('id', 'asc')->get();
+        $kriteria = kriteria::orderby('kode', 'asc')->get();
 
         return view('admin.kriteria.index', compact('kriteria'));
     }
@@ -43,12 +43,14 @@ class KriteriaController extends Controller
         $this->validate($request, [
             'kode' => 'required',
             'nama' => 'required',
+            'bobot' => 'required',
             'tipe' => 'required',
         ]);
 
         $kriteria = Kriteria::create([
             'kode' => $request->kode,
             'nama' => $request->nama,
+            'bobot' => $request->bobot,
             'tipe' => $request->tipe,
 
         ]);
@@ -94,6 +96,7 @@ class KriteriaController extends Controller
         $this->validate($request, [
             'kode' => 'required',
             'nama' => 'required',
+            'bobot' => 'required',
             'tipe' => 'required',
 
         ]);
@@ -101,6 +104,7 @@ class KriteriaController extends Controller
         $kriteria = [
             'kode' => $request->kode,
             'nama' => $request->nama,
+            'bobot' => $request->bobot,
             'tipe' => $request->tipe,
 
         ];
