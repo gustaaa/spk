@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Exports\AlternatifExport;
 use App\Imports\DataImport;
 use Illuminate\Http\Request;
 use App\Models\alternatif;
@@ -30,7 +31,11 @@ class AlternatifController extends Controller
         $mapel = alternatif::orderby('created_at', 'desc')->get();
         return view('admin.alternatif.index', compact('kriteria', 'mapel'));
     }
-
+    public function export()
+    {
+        // export data ke excel
+        return Excel::download(new AlternatifExport, 'alternatif.xlsx');
+    }
     /**
      * Show the form for creating a new resource.
      *

@@ -16,8 +16,8 @@ class CreateAlternatifsTable extends Migration
         Schema::create('alternatifs', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
-            $table->string('C1');
-            $table->string('C2');
+            $table->double('C1');
+            $table->double('C2');
             $table->double('C3');
             $table->double('C4');
             $table->double('C5');
