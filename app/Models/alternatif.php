@@ -21,11 +21,8 @@ class alternatif extends Model
         'C9',
         'C10',
         'C11',
-        'C12',
-        'kriteria_id'
+        'C12'
     ];
-    public function kriteria()
-    {
-        return $this->belongsTo(kriteria::class, 'kriteria_id', 'id');
-    }
+
+    public $timestamps = false;
 }

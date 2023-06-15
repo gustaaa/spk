@@ -35,3 +35,5 @@ route::resource('alternatif', AlternatifController::class);
 route::get('/hitung', [HitungController::class, 'hitung'])->name('hitung');
 
 route::get('/hitungtest', [HitungController::class, 'hitungtest'])->name('hitungtest');
+
+Route::post('/data-import', [AlternatifController::class, 'import']);

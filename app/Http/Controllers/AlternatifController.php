@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Imports\DataImport;
 use Illuminate\Http\Request;
 use App\Models\alternatif;
 use App\Models\kriteria;
+use Maatwebsite\Excel\Facades\Excel;
 
 class AlternatifController extends Controller
 {
@@ -13,6 +15,14 @@ class AlternatifController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function import(Request $request)
+    {
+        // dd($request->file('file'));
+        Excel::import(new DataImport, $request->file('file'));
+
+        return redirect()->route('alternatif.index')->with('success', 'Data Berhasil di ditambahkan');
+    }
+
     public function index()
     {
         //

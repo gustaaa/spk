@@ -28,7 +28,7 @@ class CreateAlternatifsTable extends Migration
             $table->double('C10');
             $table->double('C11');
             $table->double('C12');
-            $table->integer('kriteria_id')->nullable();
+            // $table->integer('kriteria_id')->nullable();
             $table->timestamps();
         });
     }
