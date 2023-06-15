@@ -54,38 +54,36 @@
                         {{-- WSM --}}
                         <td>
                             {{ number_format(
-                                0.5 *
-                                    (($item->C1 / $C1max['mapel']) * $weight1['kriterias'] +
-                                        ($item->C2 / $C2max['mapel']) * $weight2['kriterias'] +
-                                        ($item->C3 / $C3max['mapel']) * $weight3['kriterias'] +
-                                        ($item->C4 / $C4max['mapel']) * $weight4['kriterias'] +
-                                        ($item->C5 / $C5max['mapel']) * $weight5['kriterias'] +
-                                        ($item->C6 / $C6max['mapel']) * $weight6['kriterias'] +
-                                        ($item->C7 / $C7max['mapel']) * $weight7['kriterias'] +
-                                        ($item->C8 / $C8max['mapel']) * $weight8['kriterias'] +
-                                        ($item->C9 / $C9max['mapel']) * $weight9['kriterias'] +
-                                        ($item->C10 / $C10max['mapel']) * $weight10['kriterias'] +
-                                        ($C11min['mapel'] / $item->C11) * $weight11['kriterias'] +
-                                        ($C12min['mapel'] / $item->C12) * $weight12['kriterias']),
+                                ($item->C1 / $C1max['mapel']) * $weight1['kriterias'] +
+                                    ($item->C2 / $C2max['mapel']) * $weight2['kriterias'] +
+                                    ($item->C3 / $C3max['mapel']) * $weight3['kriterias'] +
+                                    ($item->C4 / $C4max['mapel']) * $weight4['kriterias'] +
+                                    ($item->C5 / $C5max['mapel']) * $weight5['kriterias'] +
+                                    ($item->C6 / $C6max['mapel']) * $weight6['kriterias'] +
+                                    ($item->C7 / $C7max['mapel']) * $weight7['kriterias'] +
+                                    ($item->C8 / $C8max['mapel']) * $weight8['kriterias'] +
+                                    ($item->C9 / $C9max['mapel']) * $weight9['kriterias'] +
+                                    ($item->C10 / $C10max['mapel']) * $weight10['kriterias'] +
+                                    ($C11min['mapel'] / $item->C11) * $weight11['kriterias'] +
+                                    ($C12min['mapel'] / $item->C12) * $weight12['kriterias'],
                                 3,
                             ) }}
                         </td>
                         {{-- WPM --}}
                         <td>
                             {{ number_format(
-                                0.5 *
-                                    (($item->C1 / $C1max['mapel']) ** $weight1['kriterias'] +
-                                        ($item->C2 / $C2max['mapel']) ** $weight2['kriterias'] +
-                                        ($item->C3 / $C3max['mapel']) ** $weight3['kriterias'] +
-                                        ($item->C4 / $C4max['mapel']) ** $weight4['kriterias'] +
-                                        ($item->C5 / $C5max['mapel']) ** $weight5['kriterias'] +
-                                        ($item->C6 / $C6max['mapel']) ** $weight6['kriterias'] +
-                                        ($item->C7 / $C7max['mapel']) ** $weight7['kriterias'] +
-                                        ($item->C8 / $C8max['mapel']) ** $weight8['kriterias'] +
-                                        ($item->C9 / $C9max['mapel']) ** $weight9['kriterias'] +
-                                        ($item->C10 / $C10max['mapel']) ** $weight10['kriterias'] +
-                                        ($C11min['mapel'] / $item->C11) ** $weight11['kriterias'] +
-                                        ($C12min['mapel'] / $item->C12) ** $weight12['kriterias']),
+                                ($item->C1 / $C1max['mapel']) ** $weight1['kriterias'] +
+                                    ($item->C2 / $C2max['mapel']) ** $weight2['kriterias'] +
+                                    ($item->C3 / $C3max['mapel']) ** $weight3['kriterias'] +
+                                    ($item->C4 / $C4max['mapel']) ** $weight4['kriterias'] +
+                                    ($item->C5 / $C5max['mapel']) ** $weight5['kriterias'] +
+                                    ($item->C6 / $C6max['mapel']) ** $weight6['kriterias'] +
+                                    ($item->C7 / $C7max['mapel']) ** $weight7['kriterias'] +
+                                    ($item->C8 / $C8max['mapel']) ** $weight8['kriterias'] +
+                                    ($item->C9 / $C9max['mapel']) ** $weight9['kriterias'] +
+                                    ($item->C10 / $C10max['mapel']) ** $weight10['kriterias'] +
+                                    ($C11min['mapel'] / $item->C11) ** $weight11['kriterias'] +
+                                    ($C12min['mapel'] / $item->C12) ** $weight12['kriterias'],
                                 3,
                             ) }}
                         </td>
