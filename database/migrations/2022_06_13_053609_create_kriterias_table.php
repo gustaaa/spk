@@ -17,7 +17,6 @@ class CreateKriteriasTable extends Migration
             $table->id();
             $table->string('kode');
             $table->string('nama');
-            $table->double('bobot');
             $table->string('tipe');
             $table->timestamps();
         });

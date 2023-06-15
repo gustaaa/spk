@@ -32,10 +32,6 @@
           <input type="text" class="form-control" name="nama" value="{{ $kriteria->nama }}">
         </div>
         <div class="form-group">
-          <label>Bobot</label>
-          <input type="text" class="form-control" name="bobot" value="{{ $kriteria->bobot }}">
-        </div>
-        <div class="form-group">
           <label>Type</label>
           <input type="text" class="form-control" name="tipe" value="{{ $kriteria->tipe }}">
         </div>
