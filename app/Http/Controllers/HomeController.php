@@ -186,8 +186,8 @@ class HomeController extends Controller
         // ];
 
 
-        $data = alternatif::orderby('nama', 'asc')->get();
-        $kriterias = kriteria::orderby('nama', 'asc')->get();
+        $data = alternatif::orderby('id', 'asc')->get();
+        $kriterias = kriteria::orderby('id', 'asc')->get();
 
 
         // $norm = 1 / $C2min['mapel'];
