@@ -4,8 +4,10 @@ namespace App\Imports;
 
 use App\Models\alternatif;
 use Maatwebsite\Excel\Concerns\ToModel;
+use Maatwebsite\Excel\Concerns\WithHeadingRow;
+use Maatwebsite\Excel\Concerns\WithUpserts;
 
-class DataImport implements ToModel
+class DataImport implements ToModel, WithHeadingRow
 {
     /**
      * @param array $row
@@ -15,19 +17,19 @@ class DataImport implements ToModel
     public function model(array $row)
     {
         return new alternatif([
-            'nama' => $row[0],
-            'C1' => $row[1],
-            'C2' => $row[2],
-            'C3' => $row[3],
-            'C4' => $row[4],
-            'C5' => $row[5],
-            'C6' => $row[6],
-            'C7' => $row[7],
-            'C8' => $row[8],
-            'C9' => $row[9],
-            'C10' => $row[10],
-            'C11' => $row[11],
-            'C12' => $row[12],
+            'nama' => $row['nama'],
+            'C1' => $row['c1'],
+            'C2' => $row['c2'],
+            'C3' => $row['c3'],
+            'C4' => $row['c4'],
+            'C5' => $row['c5'],
+            'C6' => $row['c6'],
+            'C7' => $row['c7'],
+            'C8' => $row['c8'],
+            'C9' => $row['c9'],
+            'C10' => $row['c10'],
+            'C11' => $row['c11'],
+            'C12' => $row['c12'],
         ]);
     }
 }

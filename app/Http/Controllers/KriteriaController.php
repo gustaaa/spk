@@ -15,7 +15,9 @@ class KriteriaController extends Controller
     public function index()
     {
         //
-        $kriteria = kriteria::orderby('kode', 'asc')->get();
+        // $kriteria = kriteria::orderby('kode', 'asc')->get();
+        $kriteria = kriteria::orderby('id', 'asc')->get();
+
 
         return view('admin.kriteria.index', compact('kriteria'));
     }

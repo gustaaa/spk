@@ -39,3 +39,5 @@ route::get('/hitungtest', [HitungController::class, 'hitungtest'])->name('hitung
 
 Route::post('/data-import', [AlternatifController::class, 'import']);
 Route::get('export', [AlternatifController::class, 'export'])->name('alternatif.export');
+
+Route::post('/alternatif/clear', [AlternatifController::class, 'clear'])->name('alternatif.clear');

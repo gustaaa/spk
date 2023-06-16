@@ -18,10 +18,29 @@ class AlternatifController extends Controller
      */
     public function import(Request $request)
     {
-        // dd($request->file('file'));
-        Excel::import(new DataImport, $request->file('file'));
+        $request->validate([
+            'file' => 'required|mimes:xlsx,xls',
+        ]);
 
-        return redirect()->route('alternatif.index')->with('success', 'Data Berhasil di ditambahkan');
+        try {
+            Excel::import(new DataImport, $request->file('file'));
+
+            return redirect()->route('alternatif.index')->with('success', 'Data Berhasil di ditambahkan');
+        } catch (\Exception $e) {
+            $errorMessage = 'Terjadi kesalahan saat mengimpor file.';
+            return redirect()->back()->withErrors(['error' => $errorMessage])->withInput()->with('errorAlert', $errorMessage);
+        }
+    }
+
+    public function clear()
+    {
+        alternatif::truncate();
+
+        $table = app(alternatif::class)->getTable();
+        $statement = "ALTER TABLE $table AUTO_INCREMENT = 1;";
+        \DB::statement($statement);
+
+        return response()->json(['message' => 'Data cleared successfully']);
     }
 
     public function index()
