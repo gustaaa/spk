@@ -6,16 +6,16 @@
         <table class="table table-bordered" id="" width="100%" cellspacing="0">
             <thead>
                 <tr>
-                    <th>C1</th>
-                    <th>C2</th>
-                    <th>C3</th>
-                    <th>C4</th>
-                    <th>C5</th>
-                    <th>C6</th>
-                    <th>C7</th>
-                    <th>C8</th>
-                    <th>C9</th>
-                    <th>C10</th>
+                    <th style="color: navy;">C1</th>
+                    <th style="color: navy;">C2</th>
+                    <th style="color: navy;">C3</th>
+                    <th style="color: navy;">C4</th>
+                    <th style="color: navy;">C5</th>
+                    <th style="color: navy;">C6</th>
+                    <th style="color: navy;">C7</th>
+                    <th style="color: navy;">C8</th>
+                    <th style="color: navy;">C9</th>
+                    <th style="color: navy;">C10</th>
                 </tr>
             </thead>
             <tbody>
@@ -46,8 +46,8 @@
         <table class="table table-bordered" id="" width="100%" cellspacing="0">
             <thead>
                 <tr>
-                    <th>C11</th>
-                    <th>C12</th>
+                    <th style="color: navy;">C11</th>
+                    <th style="color: navy;">C12</th>
                 </tr>
             </thead>
             <tbody>
@@ -69,19 +69,19 @@
         <table class="table table-bordered" id="" width="100%" cellspacing="0">
             <thead>
                 <tr>
-                    <th>Nama</th>
-                    <th>C1</th>
-                    <th>C2</th>
-                    <th>C3</th>
-                    <th>C4</th>
-                    <th>C5</th>
-                    <th>C6</th>
-                    <th>C7</th>
-                    <th>C8</th>
-                    <th>C9</th>
-                    <th>C10</th>
-                    <th>C11</th>
-                    <th>C12</th>
+                    <th style="color: navy;">Nama</th>
+                    <th style="color: navy;">C1</th>
+                    <th style="color: navy;">C2</th>
+                    <th style="color: navy;">C3</th>
+                    <th style="color: navy;">C4</th>
+                    <th style="color: navy;">C5</th>
+                    <th style="color: navy;">C6</th>
+                    <th style="color: navy;">C7</th>
+                    <th style="color: navy;">C8</th>
+                    <th style="color: navy;">C9</th>
+                    <th style="color: navy;">C10</th>
+                    <th style="color: navy;">C11</th>
+                    <th style="color: navy;">C12</th>
                 </tr>
             </thead>
             <tbody>
